@@ -6,6 +6,36 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2C3DE095F2AAA38139CEA40C /* Pods_SellMySeat_SellMySeatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F543C03889F000768868635 /* Pods_SellMySeat_SellMySeatUITests.framework */; };
+		4EB436A02DA3D98200688A70 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB4369F2DA3D98200688A70 /* FirebaseAnalytics */; };
+		4EB436A22DA3D98200688A70 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436A12DA3D98200688A70 /* FirebaseAnalyticsOnDeviceConversion */; };
+		4EB436A42DA3D98200688A70 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436A32DA3D98200688A70 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		4EB436A62DA3D98200688A70 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436A52DA3D98200688A70 /* FirebaseAppCheck */; };
+		4EB436A82DA3D98200688A70 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436A72DA3D98200688A70 /* FirebaseAppDistribution-Beta */; };
+		4EB436AA2DA3D98200688A70 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436A92DA3D98200688A70 /* FirebaseAuth */; };
+		4EB436AC2DA3D98200688A70 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436AB2DA3D98200688A70 /* FirebaseAuthCombine-Community */; };
+		4EB436AE2DA3D98200688A70 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436AD2DA3D98200688A70 /* FirebaseCore */; };
+		4EB436B02DA3D98200688A70 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436AF2DA3D98200688A70 /* FirebaseCrashlytics */; };
+		4EB436B22DA3D98200688A70 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436B12DA3D98200688A70 /* FirebaseDatabase */; };
+		4EB436B42DA3D98200688A70 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436B32DA3D98200688A70 /* FirebaseDynamicLinks */; };
+		4EB436B62DA3D98200688A70 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436B52DA3D98200688A70 /* FirebaseFirestore */; };
+		4EB436B82DA3D98200688A70 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436B72DA3D98200688A70 /* FirebaseFirestoreCombine-Community */; };
+		4EB436BA2DA3D98200688A70 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436B92DA3D98200688A70 /* FirebaseFunctions */; };
+		4EB436BC2DA3D98200688A70 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436BB2DA3D98200688A70 /* FirebaseFunctionsCombine-Community */; };
+		4EB436BE2DA3D98200688A70 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436BD2DA3D98200688A70 /* FirebaseInAppMessaging-Beta */; };
+		4EB436C02DA3D98200688A70 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436BF2DA3D98200688A70 /* FirebaseInstallations */; };
+		4EB436C22DA3D98200688A70 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436C12DA3D98200688A70 /* FirebaseMLModelDownloader */; };
+		4EB436C42DA3D98200688A70 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436C32DA3D98200688A70 /* FirebaseMessaging */; };
+		4EB436C62DA3D98200688A70 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436C52DA3D98200688A70 /* FirebasePerformance */; };
+		4EB436C82DA3D98200688A70 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436C72DA3D98200688A70 /* FirebaseRemoteConfig */; };
+		4EB436CA2DA3D98200688A70 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436C92DA3D98200688A70 /* FirebaseStorage */; };
+		4EB436CC2DA3D98200688A70 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436CB2DA3D98200688A70 /* FirebaseStorageCombine-Community */; };
+		4EB436CE2DA3D98200688A70 /* FirebaseVertexAI in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB436CD2DA3D98200688A70 /* FirebaseVertexAI */; };
+		84E119578500A9E7DB1A5A89 /* Pods_SellMySeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23D9D6F8290EAF271987215 /* Pods_SellMySeat.framework */; };
+		CB51077DFF2919E8FD843837 /* Pods_SellMySeatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9638DCD61CABAFEA318E5514 /* Pods_SellMySeatTests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4EB435F72DA3D5FA00688A70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +54,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03232495F7CF05DED674DFBA /* Pods-SellMySeatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellMySeatTests.release.xcconfig"; path = "Target Support Files/Pods-SellMySeatTests/Pods-SellMySeatTests.release.xcconfig"; sourceTree = "<group>"; };
 		4EB435DD2DA3D5F900688A70 /* SellMySeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SellMySeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB435F62DA3D5FA00688A70 /* SellMySeatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SellMySeatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB436002DA3D5FA00688A70 /* SellMySeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SellMySeatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F543C03889F000768868635 /* Pods_SellMySeat_SellMySeatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellMySeat_SellMySeatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E22144755CD99BCFCC8E894 /* Pods-SellMySeatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellMySeatTests.debug.xcconfig"; path = "Target Support Files/Pods-SellMySeatTests/Pods-SellMySeatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C2A99D3799D32531E356A7F /* Pods-SellMySeat-SellMySeatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellMySeat-SellMySeatUITests.release.xcconfig"; path = "Target Support Files/Pods-SellMySeat-SellMySeatUITests/Pods-SellMySeat-SellMySeatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9638DCD61CABAFEA318E5514 /* Pods_SellMySeatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellMySeatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23D9D6F8290EAF271987215 /* Pods_SellMySeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellMySeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60983078702F0078B501CC0 /* Pods-SellMySeat-SellMySeatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellMySeat-SellMySeatUITests.debug.xcconfig"; path = "Target Support Files/Pods-SellMySeat-SellMySeatUITests/Pods-SellMySeat-SellMySeatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D541AFC372D1554E5E21F459 /* Pods-SellMySeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellMySeat.debug.xcconfig"; path = "Target Support Files/Pods-SellMySeat/Pods-SellMySeat.debug.xcconfig"; sourceTree = "<group>"; };
+		F1CD14960E1AD613BBE4873F /* Pods-SellMySeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellMySeat.release.xcconfig"; path = "Target Support Files/Pods-SellMySeat/Pods-SellMySeat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +104,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB436A02DA3D98200688A70 /* FirebaseAnalytics in Frameworks */,
+				4EB436B62DA3D98200688A70 /* FirebaseFirestore in Frameworks */,
+				4EB436A22DA3D98200688A70 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				4EB436C02DA3D98200688A70 /* FirebaseInstallations in Frameworks */,
+				84E119578500A9E7DB1A5A89 /* Pods_SellMySeat.framework in Frameworks */,
+				4EB436A62DA3D98200688A70 /* FirebaseAppCheck in Frameworks */,
+				4EB436BE2DA3D98200688A70 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				4EB436A42DA3D98200688A70 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				4EB436AA2DA3D98200688A70 /* FirebaseAuth in Frameworks */,
+				4EB436BC2DA3D98200688A70 /* FirebaseFunctionsCombine-Community in Frameworks */,
+				4EB436CC2DA3D98200688A70 /* FirebaseStorageCombine-Community in Frameworks */,
+				4EB436A82DA3D98200688A70 /* FirebaseAppDistribution-Beta in Frameworks */,
+				4EB436CE2DA3D98200688A70 /* FirebaseVertexAI in Frameworks */,
+				4EB436CA2DA3D98200688A70 /* FirebaseStorage in Frameworks */,
+				4EB436C82DA3D98200688A70 /* FirebaseRemoteConfig in Frameworks */,
+				4EB436B02DA3D98200688A70 /* FirebaseCrashlytics in Frameworks */,
+				4EB436C42DA3D98200688A70 /* FirebaseMessaging in Frameworks */,
+				4EB436C22DA3D98200688A70 /* FirebaseMLModelDownloader in Frameworks */,
+				4EB436C62DA3D98200688A70 /* FirebasePerformance in Frameworks */,
+				4EB436B22DA3D98200688A70 /* FirebaseDatabase in Frameworks */,
+				4EB436AE2DA3D98200688A70 /* FirebaseCore in Frameworks */,
+				4EB436AC2DA3D98200688A70 /* FirebaseAuthCombine-Community in Frameworks */,
+				4EB436BA2DA3D98200688A70 /* FirebaseFunctions in Frameworks */,
+				4EB436B42DA3D98200688A70 /* FirebaseDynamicLinks in Frameworks */,
+				4EB436B82DA3D98200688A70 /* FirebaseFirestoreCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB51077DFF2919E8FD843837 /* Pods_SellMySeatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +144,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3DE095F2AAA38139CEA40C /* Pods_SellMySeat_SellMySeatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E931D3955E03D4B08B98782 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A23D9D6F8290EAF271987215 /* Pods_SellMySeat.framework */,
+				5F543C03889F000768868635 /* Pods_SellMySeat_SellMySeatUITests.framework */,
+				9638DCD61CABAFEA318E5514 /* Pods_SellMySeatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4EB435D42DA3D5F900688A70 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +168,8 @@
 				4EB435F92DA3D5FA00688A70 /* SellMySeatTests */,
 				4EB436032DA3D5FA00688A70 /* SellMySeatUITests */,
 				4EB435DE2DA3D5F900688A70 /* Products */,
+				956FED0B8391E65C17416FBB /* Pods */,
+				0E931D3955E03D4B08B98782 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +183,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		956FED0B8391E65C17416FBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D541AFC372D1554E5E21F459 /* Pods-SellMySeat.debug.xcconfig */,
+				F1CD14960E1AD613BBE4873F /* Pods-SellMySeat.release.xcconfig */,
+				A60983078702F0078B501CC0 /* Pods-SellMySeat-SellMySeatUITests.debug.xcconfig */,
+				8C2A99D3799D32531E356A7F /* Pods-SellMySeat-SellMySeatUITests.release.xcconfig */,
+				6E22144755CD99BCFCC8E894 /* Pods-SellMySeatTests.debug.xcconfig */,
+				03232495F7CF05DED674DFBA /* Pods-SellMySeatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EB436092DA3D5FA00688A70 /* Build configuration list for PBXNativeTarget "SellMySeat" */;
 			buildPhases = (
+				B0A772AD9C58D843430AE6CA /* [CP] Check Pods Manifest.lock */,
 				4EB435D92DA3D5F900688A70 /* Sources */,
 				4EB435DA2DA3D5F900688A70 /* Frameworks */,
 				4EB435DB2DA3D5F900688A70 /* Resources */,
@@ -124,8 +216,6 @@
 				4EB435DF2DA3D5F900688A70 /* SellMySeat */,
 			);
 			name = SellMySeat;
-			packageProductDependencies = (
-			);
 			productName = SellMySeat;
 			productReference = 4EB435DD2DA3D5F900688A70 /* SellMySeat.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EB4360E2DA3D5FA00688A70 /* Build configuration list for PBXNativeTarget "SellMySeatTests" */;
 			buildPhases = (
+				1DABEEC624394E69A1C61B68 /* [CP] Check Pods Manifest.lock */,
 				4EB435F22DA3D5FA00688A70 /* Sources */,
 				4EB435F32DA3D5FA00688A70 /* Frameworks */,
 				4EB435F42DA3D5FA00688A70 /* Resources */,
@@ -147,8 +238,6 @@
 				4EB435F92DA3D5FA00688A70 /* SellMySeatTests */,
 			);
 			name = SellMySeatTests;
-			packageProductDependencies = (
-			);
 			productName = SellMySeatTests;
 			productReference = 4EB435F62DA3D5FA00688A70 /* SellMySeatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EB436112DA3D5FA00688A70 /* Build configuration list for PBXNativeTarget "SellMySeatUITests" */;
 			buildPhases = (
+				2A172E405E801FA9DF56A482 /* [CP] Check Pods Manifest.lock */,
 				4EB435FC2DA3D5FA00688A70 /* Sources */,
 				4EB435FD2DA3D5FA00688A70 /* Frameworks */,
 				4EB435FE2DA3D5FA00688A70 /* Resources */,
@@ -170,8 +260,6 @@
 				4EB436032DA3D5FA00688A70 /* SellMySeatUITests */,
 			);
 			name = SellMySeatUITests;
-			packageProductDependencies = (
-			);
 			productName = SellMySeatUITests;
 			productReference = 4EB436002DA3D5FA00688A70 /* SellMySeatUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -208,6 +296,9 @@
 			);
 			mainGroup = 4EB435D42DA3D5F900688A70;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4EB435DE2DA3D5F900688A70 /* Products */;
 			projectDirPath = "";
@@ -243,6 +334,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DABEEC624394E69A1C61B68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SellMySeatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A172E405E801FA9DF56A482 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SellMySeat-SellMySeatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0A772AD9C58D843430AE6CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SellMySeat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EB435D92DA3D5F900688A70 /* Sources */ = {
@@ -284,6 +444,7 @@
 /* Begin XCBuildConfiguration section */
 		4EB4360A2DA3D5FA00688A70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D541AFC372D1554E5E21F459 /* Pods-SellMySeat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,23 +456,28 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sellmyseat.SellMySeat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4EB4360B2DA3D5FA00688A70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1CD14960E1AD613BBE4873F /* Pods-SellMySeat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,18 +489,22 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sellmyseat.SellMySeat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -459,6 +629,7 @@
 		};
 		4EB4360F2DA3D5FA00688A70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E22144755CD99BCFCC8E894 /* Pods-SellMySeatTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +649,7 @@
 		};
 		4EB436102DA3D5FA00688A70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03232495F7CF05DED674DFBA /* Pods-SellMySeatTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -497,6 +669,7 @@
 		};
 		4EB436122DA3D5FA00688A70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60983078702F0078B501CC0 /* Pods-SellMySeat-SellMySeatUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -514,6 +687,7 @@
 		};
 		4EB436132DA3D5FA00688A70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C2A99D3799D32531E356A7F /* Pods-SellMySeat-SellMySeatUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -569,6 +743,140 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4EB4369F2DA3D98200688A70 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		4EB436A12DA3D98200688A70 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		4EB436A32DA3D98200688A70 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		4EB436A52DA3D98200688A70 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		4EB436A72DA3D98200688A70 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		4EB436A92DA3D98200688A70 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4EB436AB2DA3D98200688A70 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		4EB436AD2DA3D98200688A70 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		4EB436AF2DA3D98200688A70 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		4EB436B12DA3D98200688A70 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		4EB436B32DA3D98200688A70 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		4EB436B52DA3D98200688A70 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		4EB436B72DA3D98200688A70 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		4EB436B92DA3D98200688A70 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		4EB436BB2DA3D98200688A70 /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		4EB436BD2DA3D98200688A70 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		4EB436BF2DA3D98200688A70 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		4EB436C12DA3D98200688A70 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		4EB436C32DA3D98200688A70 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		4EB436C52DA3D98200688A70 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		4EB436C72DA3D98200688A70 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		4EB436C92DA3D98200688A70 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		4EB436CB2DA3D98200688A70 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		4EB436CD2DA3D98200688A70 /* FirebaseVertexAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EB4369E2DA3D98200688A70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseVertexAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4EB435D52DA3D5F900688A70 /* Project object */;
 }

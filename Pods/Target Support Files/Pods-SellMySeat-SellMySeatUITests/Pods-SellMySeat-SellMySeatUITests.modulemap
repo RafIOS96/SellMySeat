@@ -1,0 +1,6 @@
+framework module Pods_SellMySeat_SellMySeatUITests {
+  umbrella header "Pods-SellMySeat-SellMySeatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
