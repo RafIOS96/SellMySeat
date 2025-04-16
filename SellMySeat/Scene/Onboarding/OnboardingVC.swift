@@ -13,12 +13,15 @@ import FirebaseFirestore
 class OnboardingVC: BaseViewController {
 
     private var vm = OnboardingVM()
+    private var repo = TicketRepo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         if let _ = Auth.auth().currentUser {
-            self.vm.updateInfo()
+            
+            self.repo.deleteTicket()
         }
     }
     
