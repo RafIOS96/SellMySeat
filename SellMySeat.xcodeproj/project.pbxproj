@@ -55,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		03232495F7CF05DED674DFBA /* Pods-SellMySeatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellMySeatTests.release.xcconfig"; path = "Target Support Files/Pods-SellMySeatTests/Pods-SellMySeatTests.release.xcconfig"; sourceTree = "<group>"; };
-		4EB435DD2DA3D5F900688A70 /* SellMySeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SellMySeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB435DD2DA3D5F900688A70 /* Tixify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tixify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB435F62DA3D5FA00688A70 /* SellMySeatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SellMySeatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB436002DA3D5FA00688A70 /* SellMySeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SellMySeatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F543C03889F000768868635 /* Pods_SellMySeat_SellMySeatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellMySeat_SellMySeatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,7 +176,7 @@
 		4EB435DE2DA3D5F900688A70 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EB435DD2DA3D5F900688A70 /* SellMySeat.app */,
+				4EB435DD2DA3D5F900688A70 /* Tixify.app */,
 				4EB435F62DA3D5FA00688A70 /* SellMySeatTests.xctest */,
 				4EB436002DA3D5FA00688A70 /* SellMySeatUITests.xctest */,
 			);
@@ -217,7 +217,7 @@
 			);
 			name = SellMySeat;
 			productName = SellMySeat;
-			productReference = 4EB435DD2DA3D5F900688A70 /* SellMySeat.app */;
+			productReference = 4EB435DD2DA3D5F900688A70 /* Tixify.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4EB435F52DA3D5FA00688A70 /* SellMySeatTests */ = {
@@ -455,7 +455,7 @@
 				INFOPLIST_FILE = SellMySeat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,7 +464,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sellmyseat.SellMySeat;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Tixify;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -488,7 +488,7 @@
 				INFOPLIST_FILE = SellMySeat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,7 +497,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sellmyseat.SellMySeat;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Tixify;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
