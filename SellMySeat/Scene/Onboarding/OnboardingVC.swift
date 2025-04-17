@@ -13,19 +13,8 @@ import FirebaseFirestore
 class OnboardingVC: BaseViewController {
 
     private var vm = OnboardingVM()
-    private var repo = TicketRepo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        if let _ = Auth.auth().currentUser {
-            
-            self.repo.deleteTicket()
-        }
-    }
-    
-    override func dataFetched<T>(type: T.Type, data: T, observerName: ObserverNameEnum) {
-        print("asd")
     }
 }

@@ -11,7 +11,7 @@ import FirebaseFirestore
 
 class TicketRepo {
     
-    func addTicket() {
+    func createTicket() {
         if Auth.auth().currentUser != nil {
             let uId: String = Auth.auth().currentUser!.uid
             let db = Firestore.firestore()
