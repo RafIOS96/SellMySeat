@@ -31,16 +31,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> _Add your app screenshots here_
-
-| Home | Tickets List | Ticket Details |
-|------|--------------|----------------|
-| ![](screenshots/home.png) | ![](screenshots/list.png) | ![](screenshots/details.png) |
-
----
-
 ## 🚀 Getting Started
 
 To get the app running locally:
