@@ -14,6 +14,8 @@ import UIKit
 internal enum StoryboardScene {
   internal enum Auth: StoryboardType {
     internal static let storyboardName = "Auth"
+
+    internal static let authVC = SceneType<Tixify.AuthVC>(storyboard: Self.self, identifier: "AuthVC")
   }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"
