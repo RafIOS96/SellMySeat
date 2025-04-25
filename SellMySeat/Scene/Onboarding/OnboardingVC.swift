@@ -10,11 +10,19 @@ import FirebaseAuth
 import FirebaseDatabase
 import FirebaseFirestore
 
-class OnboardingVC: BaseViewController {
+class OnboardingVC: BaseVCAndProtocols {
 
-    private var vm = OnboardingVM()
+    var vm: OnboardingVM?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.vm?.showAuth()
+        })
+    }
+    
+    func initUIElements() {
+        
     }
 }

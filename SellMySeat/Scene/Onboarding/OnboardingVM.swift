@@ -11,4 +11,9 @@ import FirebaseFirestore
 
 class OnboardingVM: BaseVM {
     
+    weak var coordinator: OnboardingCoordinator?
+
+    func showAuth() {
+        self.coordinator?.showAuth()
+    }
 }

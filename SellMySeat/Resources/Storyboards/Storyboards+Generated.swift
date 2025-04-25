@@ -17,6 +17,11 @@ internal enum StoryboardScene {
 
     internal static let authVC = SceneType<Tixify.AuthVC>(storyboard: Self.self, identifier: "AuthVC")
   }
+  internal enum Home: StoryboardType {
+    internal static let storyboardName = "Home"
+
+    internal static let homeVC = SceneType<Tixify.HomeVC>(storyboard: Self.self, identifier: "HomeVC")
+  }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"
 
@@ -25,9 +30,11 @@ internal enum StoryboardScene {
   internal enum Onboarding: StoryboardType {
     internal static let storyboardName = "Onboarding"
 
-    internal static let initialScene = InitialSceneType<Tixify.OnboardingVC>(storyboard: Self.self)
+    internal static let initialScene = InitialSceneType<UIKit.UINavigationController>(storyboard: Self.self)
 
     internal static let onboardingVC = SceneType<Tixify.OnboardingVC>(storyboard: Self.self, identifier: "OnboardingVC")
+
+    internal static let baseNav = SceneType<UIKit.UINavigationController>(storyboard: Self.self, identifier: "baseNav")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name

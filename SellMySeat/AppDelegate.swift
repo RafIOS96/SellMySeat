@@ -7,20 +7,23 @@
 
 import UIKit
 import CoreData
+import FirebaseCrashlytics
 import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var appCoordinator: Coordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
-        let initialVC = storyboard.instantiateInitialViewController()!
-        self.window?.rootViewController = initialVC
-        self.window?.makeKeyAndVisible()
+        let navigationCon = StoryboardScene.Onboarding.baseNav.instantiate()
+        self.appCoordinator = Coordinator()
+        self.appCoordinator?.navigationController = navigationCon
+        self.appCoordinator?.start()
+        self.window!.rootViewController = navigationCon
+        self.window!.makeKeyAndVisible()
         return true
     }
 

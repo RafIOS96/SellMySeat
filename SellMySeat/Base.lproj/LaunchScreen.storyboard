@@ -25,7 +25,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="appBackground"/>
+                        <color key="backgroundColor" name="primaryBtn"/>
                         <constraints>
                             <constraint firstItem="Dfw-I0-fOh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bQN-t2-cot"/>
                             <constraint firstItem="Dfw-I0-fOh" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vnr-Vi-TfM"/>
@@ -39,8 +39,8 @@
     </scenes>
     <resources>
         <image name="tixifyLogo" width="220" height="75"/>
-        <namedColor name="appBackground">
-            <color red="0.96078431372549022" green="0.72941176470588232" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="primaryBtn">
+            <color red="0.97254901960784312" green="0.21568627450980393" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

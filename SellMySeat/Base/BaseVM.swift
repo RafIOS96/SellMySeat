@@ -14,8 +14,24 @@ protocol VMToVCExchange: AnyObject {
     func errorReceived(error: NetworkError)
 }
 
+protocol BaseVCCoordinator: CoordinatorBase {
+    func openAuthView()
+}
+
+extension Coordinator: BaseVCCoordinator {
+    func openAuthView() {
+        let vc = StoryboardScene.Auth.authVC.instantiate()
+        let vm = AuthVM()
+        vm.coordinator = self
+        vm.baseCoordinator = self
+        vc.vm = vm
+        self.navigationController.setViewControllers([vc], animated: false)
+    }
+}
+
 class BaseVM {
     
+    weak var baseCoordinator: BaseVCCoordinator?
     weak var baseDelegate: VMToVCExchange?
 
     func checkForErrorCase<T>(responseData: T?, error: NetworkError?,
