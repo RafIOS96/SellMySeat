@@ -26,11 +26,19 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Asset {
   internal enum Assets {
     internal static let accentColor = ColorAsset(name: "AccentColor")
-    internal static let flan = ImageAsset(name: "flan")
+    internal static let inputEye = ImageAsset(name: "inputEye")
+    internal static let inputPass = ImageAsset(name: "inputPass")
+    internal static let inputUser = ImageAsset(name: "inputUser")
     internal static let tixifyLogo = ImageAsset(name: "tixifyLogo")
+    internal static let socialApple = ImageAsset(name: "socialApple")
   }
   internal enum Colors {
     internal static let appBackground = ColorAsset(name: "appBackground")
+    internal static let black = ColorAsset(name: "black")
+    internal static let borderGray = ColorAsset(name: "borderGray")
+    internal static let gray1 = ColorAsset(name: "gray1")
+    internal static let primaryBtn = ColorAsset(name: "primaryBtn")
+    internal static let white = ColorAsset(name: "white")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
