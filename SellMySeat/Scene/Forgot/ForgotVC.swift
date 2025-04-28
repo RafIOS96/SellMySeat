@@ -1,17 +1,17 @@
 //
-//  AuthVC.swift
+//  ForgotVC.swift
 //  SellMySeat
 //
-//  Created by Rafayel Aghayan on 10.04.25.
+//  Created by Rafayel Aghayan on 25.04.25.
 //
 
 import UIKit
 
-class AuthVC: BaseVCAndProtocols {
+class ForgotVC: BaseVCAndProtocols {
+    
+    var vm: ForgotVM?
     
     @IBOutlet private weak var tableView: UITableView!
-    
-    var vm: AuthVM?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,23 +37,20 @@ class AuthVC: BaseVCAndProtocols {
         self.tableView.registerCell(ofType: InputTableViewCell.self)
         self.tableView.registerCell(ofType: HeaderTableViewCell.self)
         self.tableView.registerCell(ofType: ContinueBtnTableViewCell.self)
-        self.tableView.registerCell(ofType: DynamicForgotTableViewCell.self)
-        self.tableView.registerCell(ofType: DynamicOrTableViewCell.self)
-        self.tableView.registerCell(ofType: DynamicSocialTableViewCell.self)
         self.tableView.registerCell(ofType: DynamicCreateAccountTableViewCell.self)
     }
     
-    private func callForLogin() {
+    private func callForResetPass() {
         LoadingManager.shared.startAnimating()
-        self.vm?.callForLogin()
+        self.vm?.callForForgotPassword()
     }
     
-    private func showForgotScene() {
-        self.vm?.showForgotScene()
+    private func showLogin() {
+        self.vm?.showLogin()
     }
 }
 
-extension AuthVC: UITableViewDelegate, UITableViewDataSource {
+extension ForgotVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.vm?.getDataSource().count ?? 0
     }
@@ -64,30 +61,23 @@ extension AuthVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch AuthViewEnum(rawValue: indexPath.row) {
-        case .loginBtn:
-            self.callForLogin()
-        case .forgotPass:
-            self.showForgotScene()
-        case .social:
-            print("tapped social")
-        case .createAccount:
-            self.vm?.showSignUp()
+        switch ForgotViewEnum(rawValue: indexPath.row) {
+        case .submit:
+            self.callForResetPass()
+        case .backToLogin:
+            self.showLogin()
         default: break
         }
     }
 }
 
-extension AuthVC: InputTypeCellDelegate {
+extension ForgotVC: InputTypeCellDelegate {
     func didChangedTxt(text: String?, inputType: InputEnum?) {
         switch inputType {
         case .email:
             self.vm?.setEmail(text)
-        case .pass:
-            self.vm?.setPassword(text)
         default:
             break
         }
     }
 }
-

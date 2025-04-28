@@ -1,24 +1,25 @@
 //
-//  AuthVM.swift
+//  SignUpVM.swift
 //  SellMySeat
 //
-//  Created by Rafayel Aghayan on 10.04.25.
+//  Created by Rafayel Aghayan on 25.04.25.
 //
 
 import Foundation
 import FirebaseDatabase
 import FirebaseFirestore
 
-class AuthVM: BaseVM {
+class SignUpVM: BaseVM {
     
-    weak var coordinator: AuthCoordinator?
+    weak var coordinator: SignUpCoordinator?
 
     private var repo = AuthRepo()
-    private var dataSource: [AuthViewDataSource] = AuthViewEnum.allCases
+    private var dataSource: [SignUpEnumDataSource] = SignUpEnum.allCases
     private var email: String?
     private var password: String?
-        
-    func getDataSource() -> [AuthViewDataSource] {
+    private var confirmPassword: String?
+
+    func getDataSource() -> [SignUpEnumDataSource] {
         return self.dataSource
     }
     
@@ -30,9 +31,13 @@ class AuthVM: BaseVM {
         self.password = password
     }
     
-    func callForLogin() {
+    func setConfirmPassword(_ confirmPass: String?) {
+        self.confirmPassword = confirmPass
+    }
+    
+    func callForSignUp() {
         guard let email = self.email, let password = self.password else {return}
-        self.repo.doSignIn(email: email, password: password) { [weak self] error in
+        self.repo.doSignUp(email: email, password: password) { [weak self] error in
             guard let strongSelf = self else {return}
             if let err = error {
                 strongSelf.baseDelegate?.errorReceived(error: err)
@@ -44,16 +49,12 @@ class AuthVM: BaseVM {
     }
     
     // MARK: Navigations
+
+    func showLogin() {
+        self.coordinator?.goBack()
+    }
     
     func showHome() {
-        self.coordinator?.showHomeFromAuth()
-    }
-    
-    func showSignUp() {
-        self.coordinator?.showSignUp()
-    }
-    
-    func showForgotScene() {
-        self.coordinator?.showForgotScene()
+        self.coordinator?.showHomeFromSignUp()
     }
 }

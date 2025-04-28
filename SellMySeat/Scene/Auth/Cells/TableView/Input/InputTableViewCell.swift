@@ -29,6 +29,7 @@ class InputTableViewCell: UITableViewCell {
         super.awakeFromNib()
         self.selectionStyle = .none
         self.setupView()
+        self.setTapGestureOnRightImg()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -56,11 +57,11 @@ class InputTableViewCell: UITableViewCell {
         }
     }
     
-    func setupTxtField(placeHolder: String,
-                       type: InputEnum) {
+    func setupTxtField(placeHolder: String, type: InputEnum, isSecure: Bool = false) {
         self.txtField.delegate = self
         self.txtField.tag = type.rawValue
         self.txtField.placeholder = placeHolder
+        self.txtField.isSecureTextEntry = isSecure
     }
     
     private func setupView() {
@@ -68,6 +69,17 @@ class InputTableViewCell: UITableViewCell {
         self.underView.layer.cornerRadius = 8
         self.underView.layer.masksToBounds = true
         self.underView.layer.borderColor = Asset.Colors.borderGray.color.cgColor
+    }
+    
+    private func setTapGestureOnRightImg() {
+        self.rightImgView.isUserInteractionEnabled = true
+        let rightImgViewTapped = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        self.rightImgView.addGestureRecognizer(rightImgViewTapped)
+    }
+    
+    @objc private func imageTapped() {
+        #warning("we need to change img also")
+        self.txtField.isSecureTextEntry = !self.txtField.isSecureTextEntry
     }
 }
 

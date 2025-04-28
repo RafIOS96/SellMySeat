@@ -1,38 +1,33 @@
 //
-//  AuthEnum.swift
+//  ForgotEnum.swift
 //  SellMySeat
 //
-//  Created by Rafayel Aghayan on 18.04.25.
+//  Created by Rafayel Aghayan on 25.04.25.
 //
 
 import UIKit
 
-protocol AuthViewDataSource {
+protocol ForgotViewDataSource {
     static var allCases: [Self] { get }
     func cellForRowAt(delegate: InputTypeCellDelegate, indexPath: IndexPath, tableView: UITableView) -> UITableViewCell
 }
 
-enum AuthViewEnum: Int, CaseIterable, AuthViewDataSource {
+enum ForgotViewEnum: Int, CaseIterable, ForgotViewDataSource {
     case header
     case email
-    case pass
-    case forgotPass
-    case loginBtn
-    case orLabel
-    case social
-    case createAccount
+    case submit
+    case backToLogin
     
     func inputPlaceHolder() -> String {
         switch self {
-        case .email: return "Username or Email"
-        case .pass: return "Password"
+        case .email: return "Enter your email address"
         default: return ""
         }
     }
     
     func headerTxt() -> String {
         switch self {
-        case .header: return "Welcome\nBack!"
+        case .header: return "Forgot\npassword?"
         default: return ""
         }
     }
@@ -40,43 +35,29 @@ enum AuthViewEnum: Int, CaseIterable, AuthViewDataSource {
     func inputLeftImg() -> UIImage? {
         switch self {
         case .email: return Asset.Assets.inputUser.image
-        case .pass: return Asset.Assets.inputPass.image
-        default: return nil
-        }
-    }
-    
-    func inputRightImg() -> UIImage? {
-        switch self {
-        case .pass: return Asset.Assets.inputEye.image
         default: return nil
         }
     }
     
     func isShowInputLeftImg() -> Bool {
         switch self {
-        case .email, .pass: return true
+        case .email: return true
         default: return false
         }
     }
     
-    func isShowInputRightImg() -> Bool {
-        switch self {
-        case .pass: return true
-        default: return false
-        }
-    }
     
-    func loginTxt() -> String {
+    func submitTxt() -> String {
         switch self {
-        case .loginBtn: return "Login"
+        case .submit: return "Submit"
         default: return ""
         }
     }
     
     func fullAndLinkedTxts() -> (String, String) {
         switch self {
-        case .createAccount:
-            return ("Create An Account Sign Up", "Sign Up")
+        case .backToLogin:
+            return ("I already remembered my password Login", "Login")
         default:
             return ("", "")
         }
@@ -88,31 +69,21 @@ enum AuthViewEnum: Int, CaseIterable, AuthViewDataSource {
             guard let cell = tableView.dequeueCell(ofType: HeaderTableViewCell.self) else {return UITableViewCell()}
             cell.setTxt(self.headerTxt())
             return cell
-        case .email, .pass:
+        case .email:
             guard let cell = tableView.dequeueCell(ofType: InputTableViewCell.self) else {return UITableViewCell()}
             cell.setupTxtField(placeHolder: self.inputPlaceHolder(),
-                               type: InputEnum(rawValue: self.rawValue) ?? .none,
-                               isSecure: self != .email)
+                               type: InputEnum(rawValue: self.rawValue) ?? .none)
             cell.setInputComponents(delegate: delegate,
                                     isShowLeftImg: self.isShowInputLeftImg(),
-                                    isShowRightImg: self.isShowInputRightImg(),
+                                    isShowRightImg: false,
                                     leftImg: self.inputLeftImg(),
-                                    rightImg: self.inputRightImg())
+                                    rightImg: nil)
             return cell
-        case .forgotPass:
-            guard let cell = tableView.dequeueCell(ofType: DynamicForgotTableViewCell.self) else {return UITableViewCell()}
-            return cell
-        case .loginBtn:
+        case .submit:
             guard let cell = tableView.dequeueCell(ofType: ContinueBtnTableViewCell.self) else {return UITableViewCell()}
-            cell.setTxt(self.loginTxt())
+            cell.setTxt(self.submitTxt())
             return cell
-        case .orLabel:
-            guard let cell = tableView.dequeueCell(ofType: DynamicOrTableViewCell.self) else {return UITableViewCell()}
-            return cell
-        case .social:
-            guard let cell = tableView.dequeueCell(ofType: DynamicSocialTableViewCell.self) else {return UITableViewCell()}
-            return cell
-        case .createAccount:
+        case .backToLogin:
             guard let cell = tableView.dequeueCell(ofType: DynamicCreateAccountTableViewCell.self) else {return UITableViewCell()}
             let (full, linked) = self.fullAndLinkedTxts()
             cell.setTxts(fullTxt: full, linkedTxt: linked)

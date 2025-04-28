@@ -41,8 +41,6 @@ class LanguageManager {
                 return "Հայերեն"
             case .russian:
                 return "Русский"
-            default:
-                return "English"
             }
         }
     }

@@ -50,11 +50,19 @@ class BaseViewController: UIViewController, VMToVCExchange, UIGestureRecognizerD
     }
     
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-//        if let navVc = navigationController {
-//            return navVc.viewControllers.count > 1 && (!(navVc.topViewController is HomeTabBarController))
-//        } else if let navVc = UIApplication.shared.keyWindow?.rootViewController?.topViewController()?.navigationController {
-//            return navVc.viewControllers.count > 1 && (!(navVc.topViewController is HomeTabBarController))
-//        }
+        return baseBackSwipeNavigation()
+    }
+    
+    func baseBackSwipeNavigation() -> Bool {
+        if let navVc = navigationController {
+            return navVc.viewControllers.count > 1 && !(navVc.topViewController is HomeVC)
+        }
+        if let scene = UIApplication.shared.connectedScenes
+            .first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene,
+           let navVc = (scene.windows.first { $0.isKeyWindow })?.rootViewController?.topViewController()?.navigationController {
+            return navVc.viewControllers.count > 1 && !(navVc.topViewController is HomeVC)
+        }
+
         return false
     }
     
