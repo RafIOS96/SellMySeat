@@ -35,32 +35,34 @@ class TicketRepo {
                 }
                 if let error = error {
                     let networkError = NetworkError(firebaseError: error, code: (error as NSError).code)
-                    print("🔥 Error saving ticket: \(networkError.getDisplayDescription)")
+                    Helper.regLogs(isSuccess: false, message: "db.collection(tickets).document(ticketId).setData(ticketData)")
+                    Helper.regLogs(isSuccess: false, message: "Error saving ticket: \(networkError.getDisplayDescription)")
                 } else {
-                    print("✅ Ticket with ID saved.")
+                    Helper.regLogs(isSuccess: true, message: "Ticket with ID saved successfully")
                 }
             }
         }
     }
     
-    func deleteTicket() {
+    func deleteTicket(id: String) {
         if Auth.auth().currentUser != nil {
             let db = Firestore.firestore()
-            db.collection("tickets").document("5F6D0539-207F-48C7-A428-61DCBA70953D").delete { error in
+            db.collection("tickets").document(id).delete { error in
                 if let error = error {
                     let networkError = NetworkError(firebaseError: error, code: (error as NSError).code)
-                    print("🔥 Error deleting ticket: \(networkError.getDisplayDescription)")
+                    Helper.regLogs(isSuccess: false, message: "db.collection(tickets).document(id).delete")
+                    Helper.regLogs(isSuccess: false, message: "Error deleting ticket: \(networkError.getDisplayDescription)")
                 } else {
-                    print("✅ Ticket successfully deleted")
+                    Helper.regLogs(isSuccess: true, message: "Ticket successfully deleted")
                 }
             }
         }
     }
     
-    func getTicketData() {
+    func getTicketData(id: String) {
         if Auth.auth().currentUser != nil {
             let db = Firestore.firestore()
-            db.collection("tickets").document("5F6D0539-207F-48C7-A428-61DCBA70953D").getDocument { snapshot, error in
+            db.collection("tickets").document(id).getDocument { snapshot, error in
                 if let error = error {
                     print("Error fetching ticket: \(error)")
                     return
@@ -68,12 +70,13 @@ class TicketRepo {
 
                 do {
                     if let ticket = try snapshot?.data(as: Ticket.self) {
-                        print("Parsed Ticket: \(ticket)")
+                        Helper.regLogs(isSuccess: true, message: "db.collection(tickets).document(id).getDocument")
+                        Helper.regLogs(isSuccess: true, message: "Parsed Ticket: \(ticket)")
                     } else {
-                        print("No ticket data found.")
+                        Helper.regLogs(isSuccess: false, message: "No ticket data found.")
                     }
                 } catch {
-                    print("Error parsing ticket: \(error)")
+                    Helper.regLogs(isSuccess: false, message: "Error parsing ticket: \(error.localizedDescription)")
                 }
             }
         }

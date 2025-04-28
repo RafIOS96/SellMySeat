@@ -18,20 +18,22 @@ class ProfileRepo {
             db.collection("users").document(uId).getDocument { (document, error) in
                 if let error = error {
                     let networkError = NetworkError(firebaseError: error, code: (error as NSError).code)
-                    print("🔥 Firebase error: \(networkError.getDisplayDescription)")
+                    Helper.regLogs(isSuccess: false, message: "Firebase error: \(networkError.getDisplayDescription)")
                     return
                 }
                 
                 if let document = document, document.exists {
                     do {
                         let user = try document.data(as: User.self)
-                        print("✅ User: \(user)")
+                        Helper.regLogs(isSuccess: true, message: "Get profile is succeeded")
+                        Helper.regLogs(isSuccess: true, message: "User: \(user)")
                     } catch {
                         let decodingError = NetworkError(firebaseError: error, code: (error as NSError).code)
-                        print("❌ Decoding error: \(decodingError.getDisplayDescription)")
+                        Helper.regLogs(isSuccess: false, message: "db.collection(users).document(uId).getDocument")
+                        Helper.regLogs(isSuccess: false, message: "Decoding error: \(decodingError.getDisplayDescription)")
                     }
                 } else {
-                    print("⚠️ Document does not exist")
+                    Helper.regLogs(isSuccess: false, message: "⚠️ Document does not exist")
                 }
             }
         }
@@ -59,13 +61,12 @@ class ProfileRepo {
                 "type": "user"], completion: { (error) in
                     if let err = error {
                         let networkError = NetworkError(firebaseError: err, code: (err as NSError).code)
-                        print("🔥 Firebase error: \(networkError.getDisplayDescription)")
+                        Helper.regLogs(isSuccess: false, message: "db.collection(users).document(uId).setData")
+                        Helper.regLogs(isSuccess: false, message: "\(networkError.getDisplayDescription)")
                     } else {
-                        print("update successfull:")
+                        Helper.regLogs(isSuccess: true, message: "update user info successfull")
                     }
             })
-        } else {
-            LOG_WARNING
         }
     }
     
@@ -73,10 +74,11 @@ class ProfileRepo {
         if Auth.auth().currentUser != nil {
             do {
                 try Auth.auth().signOut()
-                print("User signed out successfully")
+                Helper.regLogs(isSuccess: true, message: "User signed out successfully")
             } catch let error as NSError {
                 let networkError = NetworkError(firebaseError: error, code: (error as NSError).code)
-                print("🔥 Firebase error: \(networkError.getDisplayDescription)")
+                Helper.regLogs(isSuccess: false, message: "sign out")
+                Helper.regLogs(isSuccess: false, message: "\(networkError.getDisplayDescription)")
             }
         }
     }

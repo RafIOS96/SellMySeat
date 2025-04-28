@@ -1,17 +1,17 @@
 //
-//  AuthVC.swift
+//  SignUpVC.swift
 //  SellMySeat
 //
-//  Created by Rafayel Aghayan on 10.04.25.
+//  Created by Rafayel Aghayan on 25.04.25.
 //
 
 import UIKit
 
-class AuthVC: BaseVCAndProtocols {
+class SignUpVC: BaseVCAndProtocols {
+    
+    var vm: SignUpVM?
     
     @IBOutlet private weak var tableView: UITableView!
-    
-    var vm: AuthVM?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,17 +43,17 @@ class AuthVC: BaseVCAndProtocols {
         self.tableView.registerCell(ofType: DynamicCreateAccountTableViewCell.self)
     }
     
-    private func callForLogin() {
+    private func callForSignUp() {
         LoadingManager.shared.startAnimating()
-        self.vm?.callForLogin()
+        self.vm?.callForSignUp()
     }
     
-    private func showForgotScene() {
-        self.vm?.showForgotScene()
+    private func showLogin() {
+        self.vm?.showLogin()
     }
 }
 
-extension AuthVC: UITableViewDelegate, UITableViewDataSource {
+extension SignUpVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.vm?.getDataSource().count ?? 0
     }
@@ -64,30 +64,30 @@ extension AuthVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch AuthViewEnum(rawValue: indexPath.row) {
-        case .loginBtn:
-            self.callForLogin()
-        case .forgotPass:
-            self.showForgotScene()
+        switch SignUpEnum(rawValue: indexPath.row) {
+        case .signUpBtn:
+            self.callForSignUp()
         case .social:
             print("tapped social")
-        case .createAccount:
-            self.vm?.showSignUp()
+        case .backToLogin:
+            print("tapped social")
+            self.showLogin()
         default: break
         }
     }
 }
 
-extension AuthVC: InputTypeCellDelegate {
+extension SignUpVC: InputTypeCellDelegate {
     func didChangedTxt(text: String?, inputType: InputEnum?) {
         switch inputType {
         case .email:
             self.vm?.setEmail(text)
         case .pass:
             self.vm?.setPassword(text)
+        case .confirmPass:
+            self.vm?.setConfirmPassword(text)
         default:
             break
         }
     }
 }
-

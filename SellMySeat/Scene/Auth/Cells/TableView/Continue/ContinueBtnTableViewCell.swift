@@ -20,8 +20,11 @@ class ContinueBtnTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func setTxt(_ txt: String) {
+        self.lbl.text = txt
+    }
+    
     private func setupLbl() {
-        self.lbl.text = "Login"
         self.lbl.layer.cornerRadius = 8
         self.lbl.textAlignment = .center
         self.lbl.layer.masksToBounds = true
