@@ -13,8 +13,8 @@ protocol SignUpCoordinator: CoordinatorBase {
 
 extension Coordinator: SignUpCoordinator {
     func showHomeFromSignUp() {
-        let vc = StoryboardScene.Home.homeVC.instantiate()
-        let vm = HomeVM()
+        let vc = StoryboardScene.TabBar.tabBarVC.instantiate()
+        let vm = TabBarVM()
         vm.coordinator = self
         vm.baseCoordinator = self
         vc.vm = vm

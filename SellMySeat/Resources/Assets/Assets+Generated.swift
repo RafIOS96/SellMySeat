@@ -31,6 +31,9 @@ internal enum Asset {
     internal static let inputUser = ImageAsset(name: "inputUser")
     internal static let tixifyLogo = ImageAsset(name: "tixifyLogo")
     internal static let socialApple = ImageAsset(name: "socialApple")
+    internal static let tabHeart = ImageAsset(name: "tab.heart")
+    internal static let tabHome = ImageAsset(name: "tab.home")
+    internal static let tabSettings = ImageAsset(name: "tab.settings")
   }
   internal enum Colors {
     internal static let appBackground = ColorAsset(name: "appBackground")
